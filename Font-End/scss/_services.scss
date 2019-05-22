@@ -1,0 +1,52 @@
+#services{
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    }
+    .row{
+        height: 15rem;
+    }
+    .service-info{
+        .title{
+            color: $primary;
+            text-shadow: 0px 3.5px 3px black;
+        }
+    }
+    .service{
+        position: relative;
+        &:after{
+            content:'';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0.1;
+        }
+    }
+    #service1{
+        &:after{
+            background: url(../img/bed.png) no-repeat center center;
+            background-size: 75%;
+        }
+    }
+    #service2{
+        &:after{
+            background: url(../img/breakfast.png) no-repeat center center;
+            background-size: 75%;
+        }
+    }
+    #service3{
+        &:after{
+            background: url(../img/hotel.png) no-repeat center center;
+            background-size: 75%;
+        }
+    }
+    #service4{
+        &:after{
+            background: url(../img/bellboy.png) no-repeat center center;
+            background-size: 75%;
+        }
+    }
+}

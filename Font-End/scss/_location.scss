@@ -1,0 +1,33 @@
+#location{
+    position: relative;
+    padding: 0;
+    height: 65%;
+    .location-content{
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 0;
+        opacity: 1;
+        padding: 1rem 0;
+        transform: translateY(-50%);
+        &:after{
+            content: '';
+            position: absolute;
+            background-color: #000;
+            border: 4px solid #131313;
+            width: 52%;
+            height: 100%;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+            border-radius: 15px;
+            opacity: 0.45;
+        }
+    }
+    .map-location{
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+    }
+}

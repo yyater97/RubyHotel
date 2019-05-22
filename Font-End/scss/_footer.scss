@@ -1,0 +1,76 @@
+footer{
+    background: url('../img/ruby hotel.jpg');
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    position: relative;
+    z-index: 1;
+    padding: 3rem 0 2rem;
+    .face-iframe{
+        padding: 1rem;
+        iframe{
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            ._1drm _1ds3{
+                border-radius: 10px;
+            }
+            .uiScaledImageContainer _2zfr{
+                border-radius: 10px;
+            }
+            body.plugin{
+                background-color: $primary !important;
+            }
+        }
+    }
+    // &:after{
+    //     position: absolute;
+    //     content:'';
+    //     z-index: -1;
+    //     width: 100%;
+    //     height: 100%;
+    //     top: 0;
+    //     left: 0;
+    //     opacity: 0.35;
+    //     background-color: white;
+    // }
+    &:before{
+        display: block;
+        position: absolute;
+        background: linear-gradient(180deg,rgba(0,0,0,.5),transparent);
+        height: 136px;
+        width: 100%;
+        z-index: -1;
+        content:'';
+        top: 0;
+    }
+    .copyright{
+        margin-top: 1rem;
+        color: white;
+    }
+    .extra-nav{
+        margin-top: 1rem;
+        color: white;
+        padding-left: 0;
+        li{
+            cursor: pointer;
+            display: inline-block;
+            list-style-type: none;
+            font-weight: bold;
+            text-shadow:
+                -1px -1px 0 #c1c1c1,  
+                1px -1px 0 #c1c1c1,
+                -1px 1px 0 #c1c1c1,
+                1px 1px 0 #c1c1c1;
+            &:hover{
+                color: $primary;
+                text-shadow:
+                -1px -1px 0 #fff,  
+                1px -1px 0 #fff,
+                -1px 1px 0 #fff,
+                1px 1px 0 #fff;
+            }
+        }
+    }
+}
